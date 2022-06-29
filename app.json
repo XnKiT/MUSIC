@@ -1,0 +1,45 @@
+{
+    "name": "VOICECHAT BOT",
+    "description": "A SIMPLE TELEGRAM BOT TO STREAM VIDEO'S AND PLAY MUSIC ON VOICECHAT,MADE WITH LOVE BY (c)XnKiT™",
+    "logo": "https://te.legra.ph/file/d73ce4d501c19a045be11.jpg",
+    "keywords": [
+        "VIDEOPLAYER",
+        "MUSICPLAYER"
+    ],
+    "repository": "https://github.com/XnKiT/MuSiC",
+    "env": {
+        "SESSION": {
+            "description": "Pyrogram String Session",
+            "required": true
+        },
+        "API_ID": {
+            "description": "my.telegram.org",
+            "value": "14627413",
+            "required": false
+        },
+        "API_HASH": {
+            "description": "my.telegram.org",
+            "value": "4d5ff4db45a7e931930d0c923a7fb295",
+            "required": false
+        },
+        "HNDLR": {
+            "description": "Handler | Default (/)",
+            "value": "/",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
+    
